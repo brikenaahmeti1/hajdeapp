@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>884708644480-8bis767ul0k2urf0og1dm1u7tjq35vr1.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.884708644480-8bis767ul0k2urf0og1dm1u7tjq35vr1</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAM4x3Zl-S2ncvaMpz62F3IgGt7Y7Ne8iI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>884708644480</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.hajde.client</string>
+	<key>PROJECT_ID</key>
+	<string>hajdeapp-19adf</string>
+	<key>STORAGE_BUCKET</key>
+	<string>hajdeapp-19adf.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:884708644480:ios:94072af4c41d8e906ab865</string>
+</dict>
+</plist>
