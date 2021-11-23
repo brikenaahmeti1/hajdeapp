@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "884708644480",
+    "project_id": "hajdeapp-19adf",
+    "storage_bucket": "hajdeapp-19adf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:884708644480:android:f0d30ca249de67956ab865",
+        "android_client_info": {
+          "package_name": "com.hajdeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "884708644480-cmkogv8cstovllqnno5mehtprapdjuia.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBk_vpPc_b6CDIZD49USCmtsZzCy7NpFpk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "884708644480-cmkogv8cstovllqnno5mehtprapdjuia.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

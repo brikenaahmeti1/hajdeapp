@@ -1,3 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <resources>
-    <string name="app_name">hajdeapp</string>
+  <string name="app_name">Hajde App</string>
+  <string name="facebook_app_id">247183420608612</string>
+  <string name="facebook_client_token">554a028f87bdb801e3bd86410c0ba3f2</string>
 </resources>
