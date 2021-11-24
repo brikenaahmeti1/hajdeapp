@@ -7,7 +7,6 @@ import {
   TouchableOpacity,
   ScrollView,
   ActivityIndicator,
-  StatusBar,
   Alert,
 } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
@@ -19,7 +18,7 @@ import global, { buttonColor, grayColor } from "../../styles/global";
 import styles from "./styles";
 import { TrackButton } from "../../components/Button/Button";
 import axiosApiInstance from "../../authentification/request/request";
-// import { StatusBar } from "expo-status-bar";
+import { StatusBar } from "expo-status-bar";
 
 export default function Profili({ navigation }) {
   const [data, setData] = useState([]);
@@ -50,7 +49,7 @@ export default function Profili({ navigation }) {
 
   return (
     <View style={global.container}>
-      <StatusBar backgroundColor="transparent" translucent/>
+      <StatusBar backgroundColor="transparent"/>
       <Header
         containerStyle={{
           backgroundColor: "transparent",

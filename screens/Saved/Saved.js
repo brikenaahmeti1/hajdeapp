@@ -6,7 +6,6 @@ import {
   ScrollView,
   Alert,
   FlatList,
-  StatusBar,
   ImageBackground,
   TouchableOpacity,
   Image,
@@ -18,7 +17,7 @@ import global, { buttonColor, header, primary } from "../../styles/global";
 import { LinkButton } from "../../components/Button/Button";
 import axiosApiInstance from "../../authentification/request/request";
 import { ActivityIndicator } from "react-native";
-// import { StatusBar } from "expo-status-bar";
+import { StatusBar } from "expo-status-bar";
 
 export default function Saved({ navigation }) {
   const [products, setProducts] = useState([]);
@@ -80,7 +79,7 @@ export default function Saved({ navigation }) {
 
   return (
     <View style={global.container}>
-      <StatusBar backgroundColor="transparent" translucent/>
+      <StatusBar backgroundColor="transparent"/>
       <Header
         containerStyle={{
           backgroundColor: primary,

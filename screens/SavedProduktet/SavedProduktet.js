@@ -8,7 +8,6 @@ import {
   Alert,
   ImageBackground,
   Image,
-  StatusBar,
   TouchableOpacity,
 } from "react-native";
 import { Header } from "react-native-elements";
@@ -17,7 +16,7 @@ import global, { header, primary, buttonColor } from "../../styles/global";
 import styles from "../Saved/styles";
 import { BackButton } from "../../components/Button/Button";
 import axiosApiInstance from "../../authentification/request/request";
-// import { StatusBar } from "expo-status-bar";
+import { StatusBar } from "expo-status-bar";
 
 export default function SavedMarketet({ navigation,route }) {
   // const currency = route?.params?.item.currency;
@@ -69,7 +68,7 @@ export default function SavedMarketet({ navigation,route }) {
   };
   return (
     <View style={global.container}>
-      <StatusBar backgroundColor="transparent" translucent/>
+      <StatusBar backgroundColor="transparent" />
       <Header
         containerStyle={{
           backgroundColor: primary,

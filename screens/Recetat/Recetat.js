@@ -1,6 +1,6 @@
 //External dependencies
 import React from "react";
-import { View, Text, Image, TouchableOpacity, StatusBar } from "react-native";
+import { View, Text, Image, TouchableOpacity } from "react-native";
 import { Header } from "react-native-elements";
 // Internal dependencies
 import global, {
@@ -12,13 +12,13 @@ import global, {
 } from "../../styles/global";
 import styles from "./styles";
 import { BackButton } from "../../components/Button/Button";
-// import { StatusBar } from "expo-status-bar";
+import { StatusBar } from "expo-status-bar";
 
 export default function Recetat({ navigation }) {
   return (
     <View style={global.container}>
       {/* <StatusBar backgroundColor="transparent" /> */}
-      <StatusBar translucent backgroundColor="#fff" barStyle='dark-content' />
+      <StatusBar backgroundColor="#fff" barStyle='dark-content' />
 
       <Header
         containerStyle={{

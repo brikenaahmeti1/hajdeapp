@@ -6,7 +6,6 @@ import {
   FlatList,
   Platform,
   ActivityIndicator,
-  StatusBar,
   Text,
 } from "react-native";
 import { Header } from "react-native-elements";
@@ -21,7 +20,7 @@ import Card from "./Card";
 import { BackButton } from "../../components/Button/Button";
 import { MarketContext, RestoranContext } from "../../MarketContext";
 import axiosApiInstance from "../../authentification/request/request";
-// import { StatusBar } from "expo-status-bar";
+import { StatusBar } from "expo-status-bar";
 
 const pickerStyle = {
   inputIOS: {
@@ -140,7 +139,7 @@ export default function SetMarket({ navigation }) {
   };
   return (
     <View style={global.container}>
-      <StatusBar backgroundColor="transparent" translucent/>
+      <StatusBar backgroundColor="transparent" />
       <Header
         containerStyle={{
           backgroundColor: primary,

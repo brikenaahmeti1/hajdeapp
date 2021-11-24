@@ -6,7 +6,6 @@ import {
   Image,
   ScrollView,
   Alert,
-  StatusBar,
   ActivityIndicator,
 } from "react-native";
 import { Header } from "react-native-elements";
@@ -25,7 +24,7 @@ import CardProduct from "./CardProduct";
 import CardTypedProducts from "./CardTypedProducts";
 import UserCard from "./UserCard";
 import OrderCard from "./OrderCard";
-// import { StatusBar } from "expo-status-bar";
+import { StatusBar } from "expo-status-bar";
 
 const getStatusId = (status) => {
   switch (status) {
@@ -124,7 +123,7 @@ export default function ShoppingDetails({ navigation, route }) {
   };
   return (
     <View style={styles.container}>
-      <StatusBar backgroundColor="transparent" translucent/>
+      <StatusBar backgroundColor="transparent" />
       <Header
         containerStyle={{
           backgroundColor: primary,

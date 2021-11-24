@@ -6,7 +6,6 @@ import {
   FlatList,
   ActivityIndicator,
   TouchableOpacity,
-  StatusBar
 } from "react-native";
 import { Header } from "react-native-elements";
 // Internal dependencies
@@ -22,7 +21,7 @@ import axiosApiInstance from "../../authentification/request/request";
 import DisabledCard from "./DisabledCard";
 import Searchbar from "../../components/Searchbar/Searchbar";
 import { RestoranContext, MarketContext } from "../../MarketContext";
-// import { StatusBar } from "expo-status-bar";
+import { StatusBar } from "expo-status-bar";
 
 export default function SetRestoran({ navigation, route }) {
   const allCategorieId = route?.params?.allCategorieId;
@@ -137,7 +136,7 @@ export default function SetRestoran({ navigation, route }) {
   };
   return (
     <View style={{ flex: 1 }}>
-      <StatusBar backgroundColor="transparent" translucent/>
+      <StatusBar backgroundColor="transparent"/>
       <Header
         containerStyle={{
           backgroundColor: primary,

@@ -7,7 +7,6 @@ import {
   FlatList,
   ActivityIndicator,
   Alert,
-  StatusBar,
   TouchableOpacity,
 } from "react-native";
 import Searchbar from "../../components/Searchbar/Searchbar";
@@ -18,7 +17,7 @@ import global, { buttonColor, header,primary } from "../../styles/global";
 import Card from "./Card";
 import { BackButton } from "../../components/Button/Button";
 import axiosApiInstance from "../../authentification/request/request";
-// import { StatusBar } from "expo-status-bar";
+import { StatusBar } from "expo-status-bar";
 
 export default function KategoriteListaIme({ navigation, route }) {
   const marketID = route?.params.marketID;
@@ -107,7 +106,7 @@ export default function KategoriteListaIme({ navigation, route }) {
   };
   return (
     <View style={{ flex: 1 }}>
-      <StatusBar backgroundColor="transparent" translucent/>
+      <StatusBar backgroundColor="transparent"/>
       <Header
         containerStyle={{
           backgroundColor: primary,

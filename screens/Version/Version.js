@@ -1,14 +1,14 @@
 import React from "react";
-import { View, Image, Text, Platform, StatusBar, Linking } from "react-native";
+import { View, Image, Text, Platform, Linking } from "react-native";
 import { LargeButton } from "../../components/Button/Button";
 import styles from "./styles";
 // import * as Linking from "expo-linking";
-// import { StatusBar } from "expo-status-bar";
+import { StatusBar } from "expo-status-bar";
 
 export default function Version(props) {
   return (
     <View style={styles.container}>
-      <StatusBar backgroundColor="transparent" translucent/>
+      <StatusBar backgroundColor="transparent" />
       <Image
         source={require("../../assets/images/Version.png")}
         style={styles.image}

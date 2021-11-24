@@ -8,7 +8,6 @@ import {
   ImageBackground,
   Image,
   TouchableOpacity,
-  StatusBar,
   Alert,
 } from "react-native";
 import { Header } from "react-native-elements";
@@ -17,7 +16,7 @@ import global, { header, primary, buttonColor } from "../../styles/global";
 import styles from "../Saved/styles";
 import { BackButton } from "../../components/Button/Button";
 import axiosApiInstance from "../../authentification/request/request";
-// import { StatusBar } from "expo-status-bar";
+import { StatusBar } from "expo-status-bar";
 
 export default function SavedMarketet({ navigation }) {
   const [page, setPage] = useState(1);

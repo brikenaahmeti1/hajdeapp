@@ -8,7 +8,6 @@ import {
   FlatList,
   ActivityIndicator,
   TouchableOpacity,
-  StatusBar,
   Alert,
 } from "react-native";
 // Internal dependencies
@@ -22,7 +21,7 @@ import {
   ProduktetButton,
 } from "../../components/Button/Button";
 import axiosApiInstance from "../../authentification/request/request";
-// import { StatusBar } from "expo-status-bar";
+import { StatusBar } from "expo-status-bar";
 
 export default function RestauranetProduktet({ navigation, route }) {
   const restoranId = route?.params?.restoranId;
@@ -157,7 +156,7 @@ export default function RestauranetProduktet({ navigation, route }) {
   };
   return (
     <View style={styles.container}>
-      <StatusBar backgroundColor="transparent" translucent/>
+      <StatusBar backgroundColor="transparent" />
       <ImageBackground style={styles.img} source={{ uri: data.imageURL }}>
         <View style={styles.backButton}>
           <BackButtonRestaurant onPress={() => navigation.goBack()} />

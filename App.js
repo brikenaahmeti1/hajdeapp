@@ -19,23 +19,24 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import messaging from "@react-native-firebase/messaging";
 import PushNotification from "react-native-push-notification";
 import { Settings } from "react-native-fbsdk-next";
-// import { AppLoading } from 'react-native-unimodules';
-// import * as Font from "expo-font";
+import AppLoading from "expo-app-loading";
+import * as Font from "expo-font";
 import axios from "axios";
 import apiURL from './authentification/apiConstant'
 import NavigationStack from './navigation/Navgation';
 
 const SplashStack = createStackNavigator()
 
-// const fetchFont = () => {
-//   return Font.loadAsync({
-//     "Avenire-Regular": require("./assets/fonts/Avenir-Roman.ttf"),
-//     "Avenire-Bold": require("./assets/fonts/FontsFree-Net-AvenirLTStd-Heavy.ttf"),
-//     "Roboto-Regular": require("./assets/fonts/Roboto-Regular.ttf"),
-//     "Montserrat-Regular": require("./assets/fonts/Montserrat-Regular.ttf"),
-//     "Montserrat-SemiBold": require("./assets/fonts/Montserrat-SemiBold.ttf"),
-//   });
-// };
+const fetchFont = () => {
+  return Font.loadAsync({
+    "Avenire-Regular": require("./assets/fonts/Avenir-Roman.ttf"),
+    "Avenire-Bold": require("./assets/fonts/FontsFree-Net-AvenirLTStd-Heavy.ttf"),
+    "Roboto-Regular": require("./assets/fonts/Roboto-Regular.ttf"),
+    "Montserrat-Regular": require("./assets/fonts/Montserrat-Regular.ttf"),
+    "Montserrat-SemiBold": require("./assets/fonts/Montserrat-SemiBold.ttf"),
+  });
+};
+
 
 
 export default function App(navigation) {
@@ -75,17 +76,17 @@ export default function App(navigation) {
     }
   }, [hideSplashScreen])
 
-  // if (!fontsLoaded) {
-  //   return (
-  //     <AppLoading
-  //       startAsync={fetchFont}
-  //       onError={() => console.log("Error")}
-  //       onFinish={() => {
-  //         setFontsLoaded(true);
-  //       }}
-  //     />
-  //   );
-  // }
+  if (!fontsLoaded) {
+    return (
+      <AppLoading
+        startAsync={fetchFont}
+        onError={() => console.log("Error")}
+        onFinish={() => {
+          setFontsLoaded(true);
+        }}
+      />
+    );
+  }
 
   const onMessageReceived = (notification) => {
     PushNotification.localNotification({

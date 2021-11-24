@@ -1,12 +1,12 @@
 //External dependencies
 import React from "react";
-import { View, StatusBar } from "react-native";
+import { View } from "react-native";
 import { Header } from "react-native-elements";
 // Internal dependencies
 import global, { primary, header } from "../../styles/global";
 import Card from "./Card";
 import { BackButton } from "../../components/Button/Button";
-// import { StatusBar } from "expo-status-bar";
+import { StatusBar } from "expo-status-bar";
 
 export default function ZgjedhOpsionin({ navigation }) {
   return (

@@ -6,7 +6,6 @@ import {
   Image,
   Alert,
   TouchableOpacity,
-  StatusBar,
   Pressable,
   Modal,
   StyleSheet,
@@ -24,7 +23,7 @@ import {
   QuickButton,
 } from "../../components/Button/Button";
 import axiosApiInstance from "../../authentification/request/request";
-// import { StatusBar } from "expo-status-bar";
+import { StatusBar } from "expo-status-bar";
 
 export default function RestoranInfo({ navigation, route }) {
   const item = route?.params?.item;
@@ -123,7 +122,7 @@ export default function RestoranInfo({ navigation, route }) {
 
   return (
     <View style={global.container}>
-      <StatusBar backgroundColor="transparent" translucent/>
+      <StatusBar backgroundColor="transparent" />
       <Header
         containerStyle={{
           backgroundColor: "transparent",
